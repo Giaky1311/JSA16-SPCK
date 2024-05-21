@@ -5,6 +5,9 @@ Tooplate 2095 Level
 https://www.tooplate.com/view/2095-level
 
 */
+.logo{
+	width: 110px;
+}
 
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
