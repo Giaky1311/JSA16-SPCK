@@ -128,4 +128,9 @@ $(document).ready(function(){
 
     // Update the current year in copyright
     $('.tm-current-year').text(new Date().getFullYear());                           
-});
+})
+
+const btnLogin = document.getElementById("btnLogin")
+btnLogin.onclick = () => {
+    window.location.href = './login.html';
+}
