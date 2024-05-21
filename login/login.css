@@ -148,7 +148,7 @@ img {
 }
 
 .login__check-group{
-    column-gap: 5rem;
+    column-gap: 0.5rem;
 }
 
 .login__check-input{
@@ -176,6 +176,11 @@ img {
 
 .login__register{
     text-align: center;
+}
+
+.btn-register {
+    font-weight: 700 !important;
+    margin-left: 5px;
 }
 
 .login__register a{
