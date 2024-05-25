@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
     <link rel="stylesheet" href="./login/login.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="login">
         <img src="img/bg-img-1.jpg" alt="login image" class="login__image">
@@ -18,15 +19,15 @@
                 <div class="login__box">
                     <i class="ri-user-3-line Login__icon"></i>
                     <div class="login__box-input">
-                        <input type="email" required class="login__input" placeholder="">
+                        <input type="email" class="login__input" placeholder="">
                         <label for="" class="login__label">Email</label>
                     </div>
                 </div>
-                
+
                 <div class="login__box">
                     <i class="ri-lock-2-line Login__icon"></i>
                     <div class="login__box-input">
-                        <input type="password" required class="login__input" id="login-pass" placeholder="">
+                        <input type="password" class="login__input" id="login-pass" placeholder="">
                         <label for="" class="login__label">Password</label>
                         <i class="ri-eye-off-line" id="login-eye"></i>
                     </div>
@@ -41,7 +42,7 @@
                 <a href="#" class="login__forgot">Forgot password?</a>
             </div>
 
-            <button class="login__button">Login</button>
+            <button class="login__button" id="btnSubmit">Login</button>
 
             <p class="login__register">
                 Don't have an account?<a class="btn-register" href="register.html">Register</a>
@@ -49,8 +50,7 @@
         </form>
     </div>
 
-
-
-    <script src="/login/login.js"></script>
+    <script src="./login/login.js"></script>
 </body>
+
 </html>
