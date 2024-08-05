@@ -1,107 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ky's Travel</title>
+        <title>Ky's Travel</title>
 
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <!-- Google web font "Open Sans" -->
-    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
-    <link rel="stylesheet" href="css/tooplate-style.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./blog/blog.css">
-</head>
+        <!-- load stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+        <!-- Google web font "Open Sans" -->
+        <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <link rel="stylesheet" href="./blog/blog.css">
+    </head>
 
-<body>
-    <div class="tm-main-content" id="top">
-        <div class="tm-top-bar-bg"></div>
-        <div class="tm-top-bar" id="tm-top-bar">
-            <!-- Top Navbar -->
-            <div class="container">
+    <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img class="logo" src="./img/logo.png" alt="Site logo">
+                                Ky's Travel
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                                data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home <span
+                                                class="sr-only">(current)</span></a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About us</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog.html">Blog Entries</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="btnLogin" class="nav-link" href="./login.html">Sign Up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid d-flex flex-column">
+
                 <div class="row">
+                    <div class="title">
+                        <h2> Asia</h2>
+                    </div>
 
-                    <nav class="navbar navbar-expand-lg narbar-light">
-                        <a class="navbar-brand mr-auto" href="#">
-                            <img class="logo" src="./img/logo.png" alt="Site logo">
-                            Ky's Travel
-                        </a>
-                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
-                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home <span
-                                            class="sr-only">(current)</span></a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About us</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog Entries</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="btnLogin" class="nav-link" href="./login.html">Sign Up</a>
-                                </li>
-                            </ul>
+                    <div class="col">
+                        <div class="col-md-4">
+                            <h3>The island of Zakynthos in Greece has become famous for its picturesque shipwreck beach, but
+                                there are also lots of other things to do and see on this scenic island in the Ionian Sea.
+                            </h3>
+                            <img src="./img/pic1.jpg">
                         </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
 
-        <div class="container-fluid d-flex flex-column">
+                        <div class="col-md-4">
+                            <h3>Cappadocia Turkey is the most popular hot air ballooning location in the world, and for good
+                                reason — the prices are
+                                affordable, and you get to see some unique fairytale landscapes.</h3>
+                            <img src="./img/pic2.jpg">
+                        </div>
 
-            <div class="row">
-                <div class="title">
-                    <h2> Asia</h2>
-                </div>
-
-                <div class="col">
-                    <div class="col-md-4">
-                        <h3>The island of Zakynthos in Greece has become famous for its picturesque shipwreck beach, but
-                            there are also lots of other things to do and see on this scenic island in the Ionian Sea.
-                        </h3>
-                        <img src="./img/pic1.jpg">
-                    </div>
-
-                    <div class="col-md-4">
-                        <h3>Cappadocia Turkey is the most popular hot air ballooning location in the world, and for good
-                            reason — the prices are
-                            affordable, and you get to see some unique fairytale landscapes.</h3>
-                        <img src="./img/pic2.jpg">
-                    </div>
-
-                    <div class="col-md-4">
-                        <h3>Ang Thong National Marine Park is a group of 42 paradise islands in the Gulf of Thailand
-                            that you can visit on a day
-                            trip from Koh Samui or Koh Phangan.</h3>
-                        <img src="./img/pic3.jpg">
+                        <div class="col-md-4">
+                            <h3>Ang Thong National Marine Park is a group of 42 paradise islands in the Gulf of Thailand
+                                that you can visit on a day
+                                trip from Koh Samui or Koh Phangan.</h3>
+                            <img src="./img/pic3.jpg">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-
-
-
-            <!-- <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
+                <!-- <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
                 <div class="container ie-h-align-center-fix">
                     <div class="row tm-flex-align-center">
                         <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
@@ -165,7 +162,7 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-</body>
+            </div>
+        </body>
 
-</html>
+    </html>
