@@ -5,9 +5,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Ky's Travel</title>
+            <title>Ky's Travel</title>
+            <title>Ky's Travel</title>
 
+            <!-- load stylesheets -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+            <!-- Google web font "Open Sans" -->
+            <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+            <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+            <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+            <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+            <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+            <link rel="stylesheet" href="css/tooplate-style.css">
+            <link rel="stylesheet" href="./css/media.css">
+        </head>
         <!-- load stylesheets -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
         <!-- Google web font "Open Sans" -->
@@ -44,6 +61,9 @@
                                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                     </li>
 
+                                    <li class="nav-item">
+                                        <a id="btnBlog" class="nav-link" href="./blog.html">Blog Entries</a>
+                                    </li>
                                     <li class="nav-item">
                                         <a id="btnBlog" class="nav-link" href="./blog.html">Blog Entries</a>
                                     </li>
@@ -162,26 +182,21 @@
         </div>
 
         <div class="tm-section tm-position-relative">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
-                class="tm-section-down-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
                 <polygon fill="#ee5057" points="0,0  100,0  50,60"></polygon>
             </svg>
             <div class="container tm-pt-5 tm-pb-4">
                 <div class="row text-center">
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-legal tm-color-primary tm-margin-b-20"></i>
-                        <h3 class="tm-color-primary tm-article-title-1">Various location</h3>
-                        <p>You can find many different places to choose for your trip
-                        </p>
-
+                        <h3 class="tm-color-primary tm-article-title-1">Level HTML Template by Tooplate website</h3>
+                        <p>You are allowed to download, edit and use this template for your business or client websites.</p>
                         <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
-                        <h3 class="tm-color-primary tm-article-title-1">Thousands of plane are waiting for you</h3>
-                        <p>We are collaborating with many famous airlines in the world to help you have the best
-                            experience in your trip</p>
-
+                        <h3 class="tm-color-primary tm-article-title-1">Original Website Template Producer</h3>
+                        <p>You are NOT allowed to re-distribute the downloadable template ZIP file on any website.</p>
                         <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
@@ -194,175 +209,31 @@
             </div>
         </div>
 
-        <!--  <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                        <div class="tm-article-carousel">
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Nunc in felis aliquet metus luctus
-                                            iaculis</h3>
-                                    </header>
-                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam
-                                        sollicitudin at augue venenatis eleifend.
-                                        Nulla
-                                        ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a>
-                                </div>
-                            </article>
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Sed cursus dictum nunc quis
-                                            molestie</h3>
-                                    </header>
-                                    <p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi
-                                        viverra blandit massa in varius. Sed
-                                        nec
-                                        ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a>
-                                </div>
-                            </article>
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Eget diam pellentesque interdum ut
-                                            porta</h3>
-                                    </header>
-                                    <p>Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed
-                                        sapien venenatis consequat. Aliquam
-                                        ac
-                                        lacus volutpat, dictum risus at, scelerisque nulla.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Info.</a>
-                                </div>
-                            </article>
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Lorem ipsum dolor sit amet,
-                                            consectetur</h3>
-                                    </header>
-                                    <p>Suspendisse molestie sed dui eget faucibus. Duis accumsan sagittis tortor in
-                                        ultrices. Praesent tortor ante,
-                                        fringilla ac nibh porttitor, fermentum commodo nulla.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Detail Info.</a>
-                                </div>
-                            </article>
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Orci varius natoque penatibus et
-                                        </h3>
-                                    </header>
-                                    <p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi
-                                        viverra blandit massa in varius. Sed
-                                        nec
-                                        ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Read More</a>
-                                </div>
-                            </article>
-                            <article class="tm-bg-white tm-carousel-item">
-                                <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Nullam sollicitudin at augue
-                                            venenatis eleifend</h3>
-                                    </header>
-                                    <p>Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed
-                                        sapien venenatis consequat. Aliquam
-                                        ac
-                                        lacus volutpat, dictum risus at, scelerisque nulla.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Details</a>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
-                        <div class="tm-bg-white">
-                            <div class="tm-bg-primary tm-sidebar-pad">
-                                <h3 class="tm-color-white tm-sidebar-title">Recommended Places</h3>
-                                <p class="tm-color-white tm-margin-b-0 tm-font-light">Enamel pin cliche tilde, kitsch
-                                    and VHS thundercats</p>
-                            </div>
-                            <div class="tm-sidebar-pad-2">
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-01.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Europe</h4>
-                                    </div>
-                                </a>
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-02.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Asia</h4>
-                                    </div>
-                                </a>
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-03.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Africa</h4>
-                                    </div>
-                                </a>
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-04.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">South America
-                                        </h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="tm-bg-video">
-
             <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
                 <div class="container ie-h-align-center-fix">
                     <div class="row tm-flex-align-center">
                         <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
-                            <h2 class="text-uppercase tm-section-title-2">ASIA</h2>
-                            <h3 class="tm-color-primary tm-font-semibold tm-section-subtitle-2">Singapore</h3>
+                            <h2 class="text-uppercase tm-section-title-2">News</h2>
                         </div>
                         <div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
                             <div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
                                 <article class="media tm-margin-b-20 tm-media-1">
                                     <img src="img/img-03.jpg" alt="Image">
                                     <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                        <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Suspendisse vel
-                                            est libero sem phasellus ac
-                                            laoreet</h3>
-                                        <p>Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus
-                                            finibus rhoncus justo, tempus
-                                            eleifend
-                                            neque dictum ac. Aenean metus leo, consectetur non.
-                                            <br><br>
-                                            Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum
-                                            justo in orci facilisis ultricies.
-                                            Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor
-                                            gravida.
-                                        </p>
+                                        <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Article 1</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at ex ea fuga sint modi neque voluptatem quis officia dicta reprehenderit, temporibus totam earum pariatur et magni. Amet, cupiditate
+                                            omnis.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at ex ea fuga sint modi neque voluptatem quis officia dicta reprehenderit, temporibus totam earum pariatur et magni. Amet, cupiditate
+                                            omnis.</p>
                                     </div>
                                 </article>
                                 <article class="media tm-margin-b-20 tm-media-1">
                                     <img src="img/img-04.jpg" alt="Image">
                                     <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                        <h3 class="tm-font-semibold tm-article-title-3">Suspendisse vel est libero sem
-                                            phasellus ac laoreet</h3>
-                                        <p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac
-                                            nibh porttitor, fermentum
-                                            commodo
-                                            nulla.</p>
+                                        <h3 class="tm-font-semibold tm-article-title-3">Article 2</h3>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum similique rerum dolorem nemo odit earum pariatur explicabo numquam ipsam aliquid tenetur quisquam ratione totam nostrum temporibus quo,
+                                            aliquam voluptatum. Veritatis.</p>
                                         <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue
                                             reading...</a>
                                     </div>
@@ -370,11 +241,9 @@
                                 <article class="media tm-margin-b-20 tm-media-1">
                                     <img src="img/img-05.jpg" alt="Image">
                                     <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                        <h3 class="tm-font-semibold tm-article-title-3">Faucibus dolor ligula nisl metus
-                                            auctor aliquet</h3>
-                                        <p>Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl
-                                            orci, laoreet ultricies massa
-                                            tristique id.</p>
+                                        <h3 class="tm-font-semibold tm-article-title-3">Article 3</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quidem quis reiciendis, odio commodi voluptatum quas accusamus est quam cumque recusandae, fugit aliquid! Pariatur sapiente, dignissimos
+                                            perferendis repellat ad natus!</p>
                                         <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue
                                             reading...</a>
                                     </div>
@@ -419,19 +288,18 @@
             </div>
         </div>
 
-            <footer class="tm-bg-dark-blue">
+        <footer class="tm-bg-dark-blue">
                 <div class="container">
                     <div class="row">
                         <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                            Copyright &copy; <span class="tm-current-year">2018</span> Gia Ky-JSA16
-
-                            - Design: <a rel="nofollow" href="https://www.tooplate.com" class="tm-color-primary tm-font-normal"
-                                target="_parent">Tooplate</a></p>
+                            Copyright &copy; <span class="tm-current-year">2024</span> Gia Ky-JSA16
+                        </p>
                     </div>
                 </div>
-            </footer>
-        </div>
+        </footer>
+    </div>
 
+        <!-- load JS files -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/popper.min.js"></script> <!-- https://popper.js.org/ -->
