@@ -1,210 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ky's Travel</title>
+        <title>Ky's Travel</title>
 
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <!-- Google web font "Open Sans" -->
-    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
-    <link rel="stylesheet" href="css/tooplate-style.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./blog/blog.css">
-</head>
+        <!-- load stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+        <!-- Google web font "Open Sans" -->
+        <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <link rel="stylesheet" href="./blog/blog.css">
+    </head>
 
-<body>
-    <div class="tm-main-content" id="top">
-        <div class="tm-top-bar-bg"></div>
-        <div class="tm-top-bar" id="tm-top-bar">
-            <!-- Top Navbar -->
-            <div class="container">
-                <div class="row">
+    <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="index.html">
+                                <img class="logo" src="./img/logo.png" alt="Site logo">
+                                Ky's Travel
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                                data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                    </li>
 
-                    <nav class="navbar navbar-expand-lg narbar-light">
-                        <a class="navbar-brand mr-auto" href="#">
-                            <img class="logo" src="./img/logo.png" alt="Site logo">
-                            Ky's Travel
-                        </a>
-                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
-                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home <span
-                                            class="sr-only">(current)</span></a>
-                                </li>
+                                    <li class="nav-item">
+                                        <a id="btnBlog" class="nav-link" href="./blog.html">Blog Entries</a>
+                                    </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About us</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog Entries</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="btnLogin" class="nav-link" href="./login.html">Sign Up</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                                    <li class="nav-item">
+                                        <a id="btnContact" class="nav-link" href="./contact.html">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="btnLogin" class="nav-link" href="./login.html">Sign Up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                        <div class="tm-article-carousel">
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">26 BEST HIKES IN OAHU HAWAII</h3>
-                                    </header>
-                                    <p>Oahu may be the busiest and most populated Hawaiian island, but that doesn’t mean
-                                        there aren’t some great Oahu hikes and
-                                        nature trails to get away from the bustle and see some spectacular mountains,
-                                        beaches, and waterfalls.............</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a>
+            <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                            <div class="tm-article-carousel">
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header>
+                                            <h3 class="text-uppercase tm-article-title-2">26 BEST HIKES IN OAHU HAWAII</h3>
+                                        </header>
+                                        <p>Oahu may be the busiest and most populated Hawaiian island, but that doesn’t mean
+                                            there aren’t some great Oahu hikes and
+                                            nature trails to get away from the bustle and see some spectacular mountains,
+                                            beaches, and waterfalls.............</p>
+                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a>
+                                    </div>
+                                </article>
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header>
+                                            <h3 class="text-uppercase tm-article-title-2">16 Best Slot Canyons Near Las
+                                                Vegas Nevada</h3>
+                                        </header>
+                                        <p>Believe it or not, there are a bunch of great slot canyons near Las Vegas,
+                                            Nevada. These may not be the slots you had in
+                                            mind for … </p>
+                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
+                            <div class="tm-bg-white">
+                                <div class="tm-bg-primary tm-sidebar-pad">
+                                    <h3 class="tm-color-white tm-sidebar-title">Recommended Places</h3>
+                                    <p class="tm-color-white tm-margin-b-0 tm-font-light">Enamel pin cliche tilde, kitsch
+                                        and VHS thundercats</p>
                                 </div>
-                            </article>
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">16 Best Slot Canyons Near Las
-                                            Vegas Nevada</h3>
-                                    </header>
-                                    <p>Believe it or not, there are a bunch of great slot canyons near Las Vegas,
-                                        Nevada. These may not be the slots you had in
-                                        mind for … </p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a>
+                                <div class="tm-sidebar-pad-2">
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-01.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Europe</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-02.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Asia</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Africa</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-04.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">South America
+                                            </h4>
+                                        </div>
+                                    </a>
                                 </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
-                        <div class="tm-bg-white">
-                            <div class="tm-bg-primary tm-sidebar-pad">
-                                <h3 class="tm-color-white tm-sidebar-title">Recommended Places</h3>
-                                <p class="tm-color-white tm-margin-b-0 tm-font-light">Enamel pin cliche tilde, kitsch
-                                    and VHS thundercats</p>
-                            </div>
-                            <div class="tm-sidebar-pad-2">
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-01.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Europe</h4>
-                                    </div>
-                                </a>
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-02.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Asia</h4>
-                                    </div>
-                                </a>
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-03.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Africa</h4>
-                                    </div>
-                                </a>
-                                <a href="#" class="media tm-media tm-recommended-item">
-                                    <img src="img/tn-img-04.jpg" alt="Image">
-                                    <div class="media-body tm-media-body tm-bg-gray">
-                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">South America
-                                        </h4>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tm-bg-video">
+            <div class="tm-bg-video">
 
-            <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
-                <div class="container ie-h-align-center-fix">
-                    <div class="row tm-flex-align-center">
-                        <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
-                            <h2 class="text-uppercase tm-section-title-2">News</h2>
-                        </div>
-                        <div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
-                            <div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
-                                <article class="media tm-margin-b-20 tm-media-1">
-                                    <img src="img/img-03.jpg" alt="Image">
-                                    <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                        <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Suspendisse vel
-                                            est libero sem phasellus ac
-                                            laoreet</h3>
-                                        <p>Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus
-                                            finibus rhoncus justo, tempus
-                                            eleifend
-                                            neque dictum ac. Aenean metus leo, consectetur non.
-                                            <br><br>
-                                            Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum
-                                            justo in orci facilisis ultricies.
-                                            Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor
-                                            gravida.
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="media tm-margin-b-20 tm-media-1">
-                                    <img src="img/img-04.jpg" alt="Image">
-                                    <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                        <h3 class="tm-font-semibold tm-article-title-3">Suspendisse vel est libero sem
-                                            phasellus ac laoreet</h3>
-                                        <p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac
-                                            nibh porttitor, fermentum
-                                            commodo
-                                            nulla.</p>
-                                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue
-                                            reading...</a>
-                                    </div>
-                                </article>
-                                <article class="media tm-margin-b-20 tm-media-1">
-                                    <img src="img/img-05.jpg" alt="Image">
-                                    <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                        <h3 class="tm-font-semibold tm-article-title-3">Faucibus dolor ligula nisl metus
-                                            auctor aliquet</h3>
-                                        <p>Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl
-                                            orci, laoreet ultricies massa
-                                            tristique id.</p>
-                                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue
-                                            reading...</a>
-                                    </div>
-                                </article>
+                <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row tm-flex-align-center">
+                            <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
+                                <h2 class="text-uppercase tm-section-title-2">News</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
+                                <div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Suspendisse vel
+                                                est libero sem phasellus ac
+                                                laoreet</h3>
+                                            <p>Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus
+                                                finibus rhoncus justo, tempus
+                                                eleifend
+                                                neque dictum ac. Aenean metus leo, consectetur non.
+                                                <br><br>
+                                                Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum
+                                                justo in orci facilisis ultricies.
+                                                Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor
+                                                gravida.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/img-04.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-article-title-3">Suspendisse vel est libero sem
+                                                phasellus ac laoreet</h3>
+                                            <p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac
+                                                nibh porttitor, fermentum
+                                                commodo
+                                                nulla.</p>
+                                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue
+                                                reading...</a>
+                                        </div>
+                                    </article>
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/img-05.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-article-title-3">Faucibus dolor ligula nisl metus
+                                                auctor aliquet</h3>
+                                            <p>Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl
+                                                orci, laoreet ultricies massa
+                                                tristique id.</p>
+                                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue
+                                                reading...</a>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-
-
-
-        <!-- <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
+            <!-- <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
                 <div class="container ie-h-align-center-fix">
                     <div class="row tm-flex-align-center">
                         <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
@@ -268,7 +259,7 @@
                     </div>
                 </div>
             </div> -->
-    </div>
-</body>
+        </div>
+    </body>
 
 </html>
