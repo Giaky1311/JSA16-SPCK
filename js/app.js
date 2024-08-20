@@ -88,17 +88,23 @@ btnLogin.onclick = () => {
   window.location.href = "./login.html";
 };
 
-const btnLogin = document.getElementById("btnAbout");
-btnLogin.onclick = () => {
+const btnAbout = document.getElementById("btnAbout");
+btnAbout.onclick = () => {
   window.location.href = "./about.html";
 };
 
-const btnLogin = document.getElementById("btnBlog");
-btnLogin.onclick = () => {
+const btnBlog = document.getElementById("btnBlog");
+btnBlog.onclick = () => {
   window.location.href = "./blog.html";
 };
 
-const btnLogin = document.getElementById("btnContact");
-btnLogin.onclick = () => {
+const btnContact = document.getElementById("btnContact");
+btnContact.onclick = () => {
   window.location.href = "./contact.html";
 };
+
+const btnHome = document.getElementById("btnHome");
+btnContact.onclick = () => {
+  window.location.href = "./index.html";
+};
+
