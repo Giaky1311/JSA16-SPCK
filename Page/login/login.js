@@ -45,3 +45,4 @@ function getInfo() {
     }
     console.log('incorrect email or password')
 }
+

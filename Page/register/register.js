@@ -19,7 +19,7 @@ const showHiddenPass = (loginPass, loginEye) => {
 
 showHiddenPass('login-pass', 'login-eye')
 
-const loginbtn = document.getElementById("loginbtn")
-loginbtn.onclick = () => {
-    window.location.href = './login.html';
-}
+//const loginbtn = document.getElementById("loginbtn")
+//loginbtn.onclick = () => {
+//window.location.href = './login.html';
+//}//

@@ -291,13 +291,13 @@
 
     <!-- load JS files -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/popper.min.js"></script> <!-- https://popper.js.org/ -->
-    <script src="js/bootstrap.min.js"></script> <!-- https://getbootstrap.com/ -->
-    <script src="js/datepicker.min.js"></script> <!-- https://github.com/qodesmith/datepicker -->
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-    <script src="slick/slick.min.js"></script> <!-- http://kenwheeler.github.io/slick/ -->
+    <script>(g => {
+            var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => {
+                await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a)
+            })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+        })
+            ({ key: "INSERT_YOUR_API_KEY", v: "weekly" });</script>
+
     <script src="./js/app.js"></script>
 </body>
 
