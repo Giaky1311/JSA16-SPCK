@@ -18,17 +18,24 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 //input
-const email = document.getElementById('email').value;
-const password = document.getElementById('password').value;
 
 const button = document.getElementById('loginbtn');
-button.addEventListener("click", function (event) {
+const auth = getAuth()
+
+button.onclick = (event) => {
     event.preventDefault()
+
+
+    //input
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
             alert("Creating Account...")
+            window.location.href = "login.html";
             // ...
         })
         .catch((error) => {
@@ -37,4 +44,4 @@ button.addEventListener("click", function (event) {
             alert(errorMessage)
             // ..
         });
-})
+}

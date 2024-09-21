@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 :root {
     --white-color: hsl(0, 0%, 100%);
     --black-color: hsl(0, 0%, 0%);
@@ -10,7 +12,6 @@
     --font-medium: 500;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
