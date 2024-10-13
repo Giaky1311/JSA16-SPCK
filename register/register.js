@@ -1,25 +1,44 @@
-const showHiddenPass = (loginPass, loginEye) => {
-    const input = document.getElementById(loginPass),
-        iconEye = document.getElementById(loginEye)
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+} from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyCuQg327GoQ3nQ8QKTSWnAhU3n9A6m5fwM",
+  authDomain: "spck-1aec7.firebaseapp.com",
+  projectId: "spck-1aec7",
+  storageBucket: "spck-1aec7.appspot.com",
+  messagingSenderId: "840104338477",
+  appId: "1:840104338477:web:2591b13024f9cb87eac4a4",
+};
 
-    iconEye.addEventListener('click', () => {
-        if (input.type === 'password') {
-            input.type = 'text'
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-            iconEye.classList.add('ri-eye-line')
-            iconEye.classList.remove('ri-eye-off-line')
-        } else {
-            input.type = 'password'
+//input
 
-            iconEye.classList.remove('ri-eye-line')
-            iconEye.classList.add('ri-eye-off-line')
-        }
+const button = document.getElementById("registerBtn");
+const auth = getAuth();
+
+button.onclick = (event) => {
+  event.preventDefault();
+
+  //input
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed up
+      const user = userCredential.user;
+      alert("Creating Account...");
+      window.location.href = "login.html";
+      // ...
     })
-}
-
-showHiddenPass('login-pass', 'login-eye')
-
-const loginbtn = document.getElementById("loginbtn")
-loginbtn.onclick = () => {
-    window.location.href = './login.html';
-}
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorMessage);
+      // ..
+    });
+};

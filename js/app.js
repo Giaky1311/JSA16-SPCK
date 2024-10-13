@@ -83,22 +83,84 @@ function togglePlayPause() {
   }
 }
 
-const btnLogin = document.getElementById("btnLogin");
-btnLogin.onclick = () => {
-  window.location.href = "./login.html";
-};
+$(document).ready(function () {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 100) {
+      $(".tm-top-bar").addClass("active");
+    } else {
+      //remove the background property so it comes transparent again (defined in your css)
+      $(".tm-top-bar").removeClass("active");
+    }
+  });
 
-const btnLogin = document.getElementById("btnAbout");
-btnLogin.onclick = () => {
-  window.location.href = "./about.html";
-};
+  // Google Map
+  loadGoogleMap();
 
-const btnLogin = document.getElementById("btnBlog");
-btnLogin.onclick = () => {
+  // Date Picker
+  const pickerCheckIn = datepicker("#inputCheckIn");
+  const pickerCheckOut = datepicker("#inputCheckOut");
+
+  // Slick carousel
+  setCarousel();
+  setPageNav();
+
+  $(window).resize(function () {
+    setCarousel();
+    setPageNav();
+  });
+
+  // Close navbar after clicked
+  $(".nav-link").click(function () {
+    $("#mainNav").removeClass("show");
+  });
+
+  // Control video
+  $(".tm-btn-play").click(function () {
+    togglePlayPause();
+  });
+
+  $(".tm-btn-pause").click(function () {
+    togglePlayPause();
+  });
+
+  // Update the current year in copyright
+  $(".tm-current-year").text(new Date().getFullYear());
+});
+
+document.getElementById("btnBlog").addEventListener("click", function (event) {
+  event.preventDefault();
   window.location.href = "./blog.html";
+});
+
+document
+  .getElementById("btnContact")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.location.href = "./contact.html";
+  });
+
+document.getElementById("btnLogin").addEventListener("click", function (event) {
+  event.preventDefault();
+  window.location.href = "./login.html";
+});
+
+const showHiddenPass = (loginPass, loginEye) => {
+  const input = document.getElementById(loginPass),
+    iconEye = document.getElementById(loginEye);
+
+  iconEye.addEventListener("click", () => {
+    if (input.type === "password") {
+      input.type = "text";
+
+      iconEye.classList.add("ri-eye-line");
+      iconEye.classList.remove("ri-eye-off-line");
+    } else {
+      input.type = "password";
+
+      iconEye.classList.remove("ri-eye-line");
+      iconEye.classList.add("ri-eye-off-line");
+    }
+  });
 };
 
-const btnLogin = document.getElementById("btnContact");
-btnLogin.onclick = () => {
-  window.location.href = "./contact.html";
-};
+showHiddenPass("login-pass", "login-eye");
