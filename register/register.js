@@ -1,8 +1,10 @@
+// Firebase Imports
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
 import {
   getAuth,
   createUserWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCuQg327GoQ3nQ8QKTSWnAhU3n9A6m5fwM",
   authDomain: "spck-1aec7.firebaseapp.com",
@@ -14,31 +16,23 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-//input
-
-const button = document.getElementById("registerBtn");
 const auth = getAuth();
 
-button.onclick = (event) => {
+// Event listener for register button
+document.getElementById("registerBtn").onclick = (event) => {
   event.preventDefault();
 
-  //input
+  // Get input values
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
+  // Create user with Firebase Authentication
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed up
-      const user = userCredential.user;
-      alert("Creating Account...");
+      alert("Account Created...");
       window.location.href = "login.html";
-      // ...
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorMessage);
-      // ..
+      alert(error.message); // Show error message
     });
 };
